@@ -3,5 +3,8 @@ members = ["error-code", "error-code-derive"]
 resolver = "2"
 
 [workspace.dependencies]
-error-code = { path = "../error-code" }
-error-code-derive = { path = "../error-code-derive" }
+error-code = { path = "./error-code" }
+error-code-derive = { path = "./error-code-derive" }
+anyhow = "1"
+thiserror = "1"
+http = "1"
