@@ -5,9 +5,15 @@ edition = "2024"
 
 [dependencies]
 error-code-derive = { workspace = true }
+base64 = "0.22.1"
 
 [dev-dependencies]
+tokio = { version = "1.46.0", features = ["rt", "macros", "rt-multi-thread"] }
+axum = { version = "0.8.4", features = ["http2", "query", "tracing"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
 anyhow = { workspace = true }
 error-code = { workspace = true }
 http = { workspace = true }
 thiserror = { workspace = true }
+backtrace = "0.3.75"
